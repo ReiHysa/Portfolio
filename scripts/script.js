@@ -25,3 +25,15 @@ slider.addEventListener('mousedown', (e) => {
     const walk = (x - startX) * 3; //scroll-fast
     slider.scrollLeft = scrollLeft - walk;
   });
+
+  const about = document.querySelector(".about-content")
+  const textBox = document.querySelector(".text-box")
+  const cross = document.querySelector(".cross")
+
+
+  about.addEventListener("click", () => {
+    textBox.classList.remove('hidden')
+  })
+  cross.addEventListener("click", () => {
+    textBox.classList.add('hidden')
+  })

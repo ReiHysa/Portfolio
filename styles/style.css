@@ -324,10 +324,180 @@ nav ul .inactive:hover a {
   color: white;
 }
 
+#about .arrow-img {
+  width: 80px;
+  border-radius: 50%;
+  background-image: url(../assets/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  z-index: 1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#about .arrow-img2 {
+  width: 80px;
+  border-radius: 50%;
+  background-image: url(../assets/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  z-index: 1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#about .arrow-img3 {
+  width: 80px;
+  border-radius: 50%;
+  background-image: url(../assets/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  z-index: 1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#about .arrow-img4 {
+  width: 80px;
+  background-image: url(../assets/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  background-size: contain;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  color: white;
+  z-index: 1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+#about .content:hover .arrow-img {
+  top: -50px;
+}
+
+#about .content:hover .arrow-img2 {
+  left: 300px;
+}
+
+#about .content:hover .arrow-img3 {
+  top: 150px;
+}
+
+#about .content:hover .arrow-img4 {
+  right: 300px;
+}
+
+#about h2 {
+  font-size: 50px;
+  z-index: 5;
+}
+
 #about p {
   background-color: #00ffbb;
   padding: 20px;
   border-radius: 10%;
+}
+
+.text-box {
+  border: 2px solid white;
+  background-color: #00ffbb;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-box p {
+  width: 80%;
+  background-color: #02e8aa;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.text-box .cross {
+  background-color: white;
+  color: #00ffbb;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.text-box .cross:hover {
+  color: white;
+  background-color: #00ffbb;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  -webkit-transition: .3s ease linear;
+  transition: .3s ease linear;
 }
 
 @-webkit-keyframes white-animation {
