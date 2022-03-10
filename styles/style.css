@@ -450,8 +450,8 @@ nav ul .inactive:hover a {
 }
 
 .text-box {
-  border: 2px solid white;
-  background-color: #00ffbb;
+  border: 4px solid black;
+  background-color: white;
   position: absolute;
   top: 50px;
   bottom: 50px;
@@ -469,9 +469,30 @@ nav ul .inactive:hover a {
           align-items: center;
 }
 
+.text-box h1 {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 300px;
+  margin-left: 20px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.text-box h1:hover {
+  background-color: #f2f2f2;
+}
+
 .text-box p {
   width: 80%;
-  background-color: #02e8aa;
   padding: 20px;
   border-radius: 20px;
   font-size: 25px;
@@ -479,18 +500,17 @@ nav ul .inactive:hover a {
 
 .text-box .cross {
   background-color: white;
-  color: #00ffbb;
+  color: red;
   position: absolute;
   top: 5px;
   right: 5px;
   padding: 10px;
   border: 2px solid white;
+  font-size: 20px;
 }
 
 .text-box .cross:hover {
-  color: white;
-  background-color: #00ffbb;
-  border: 2px solid white;
+  color: black;
   cursor: pointer;
 }
 
